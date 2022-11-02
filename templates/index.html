@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+
+    <title>First Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+
+
+</style>
+    
+
+     <body style="background-color: rgba(131, 33, 65, 0.862);">
+
+
+
+    <h1> Car Price Prediction </h1>
+    <form method="POST" action="/predict_charges">
+
+        <label>Make:</label>
+        <select name = "make">
+            <option value ="alfa-romero" >alfa-romero</option>
+            <option value ="audi" >audi</option>
+            <option value="bmw">BMW</option>
+            <option value ="jaguar" >Jaguar</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="dodge">Dodge</option>
+            <option value="honda">Honda</option>
+            <option value="mazda">Mazda</option>
+            <option value="mitsubishi">Mitsubishi</option>
+            <option value="nissan">Nissan</option>
+            <option value="peugot">Peugot</option>
+            <option value="plymouth">Plymouth</option>
+            <option value="porsche">Porsche</option>
+            <option value="saab">Saab</option>
+            <option value="subaru">Subaru</option>
+            <option value="toyota">Toyota</option>
+            <option value="volkswagen">Volkswagen</option>
+            <option value="volvo">Volvo</option>
+            
+            
+        
+        </select>
+
+        <br>
+        <br>
+
+        <label>symboling:</label>
+        <input type = "text" name = "symboling">
+        </select>
+
+        <br>
+        <br>
+
+        <label>fuel_type:</label>
+        <select name = "fuel_type">
+            <option value ="gas" > Gas</option>
+            <option value = "diesel">diesel</option>
+       
+        </select>
+
+        <br>
+        <br>
+
+        <label>Aspiration:</label>    
+        <select name = "aspiration">
+            <option value = "std">Std</option>
+            <option value = "turbo">Turbo</option>
+        </select>
+
+        
+        <br>
+        <br>
+
+        <label>Num_of_Doors:</label>    
+        <select name = "num_of_doors">
+            <option value = "four">Four</option>
+            <option value = "two">Two</option>
+
+        </select>
+
+        
+        <br>
+        <br>
+
+        <label>Body_style:</label>    
+        <select name = "body_style">
+            <option value="hardtop">Hardtop</option>
+            <option value="hatchback">Hatchback</option>
+            <option value="sedan">Sedan</option>
+            <option value="wagon">Wagon</option>
+
+        </select>
+        <br>
+        <br>
+
+        <label>Drive_Wheels:</label>    
+        <select name = "drive_wheels">
+            <option value ="rwd" > rwd </option>
+            <option value ="fwd" > fwd</option>
+            <option value ="4wd" > 4wd</option>
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>Engine_location:</label>    
+        <select name = "engine_location">
+            <option value ="front" > front </option>
+            <option value ="rear" > rear</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Number_of_Cylinders:</label>    
+        <select name = "number_of_cylinders">
+            <option value ="four" > four </option>
+            <option value ="six" > six</option>
+            <option value ="five" > five </option>
+            <option value ="eight" > eight</option>
+            <option value ="two" > two </option>
+            <option value ="three" > three</option>
+            <option value ="twelve" > twelve</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>horsepower:</label>
+        <input type = "text" name = "horsepower">
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p>Your Car Price will be <b> &#65284 {{ prediction }} /- </b> Only </p>
+
+
+    </form>
+
+
+</body>
+</html>
